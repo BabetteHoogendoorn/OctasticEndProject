@@ -1,0 +1,17 @@
+doctype html
+html
+	title Musicvotes
+	head
+	#nav
+		a(href='/') Home
+		a(href='/yourvotes') Your Votes
+		a(href='/newplaylist') New Playlist
+		a(href='/history') History
+		a(href='/logout') Logout 
+		h1 Profile
+		h2 Hello #{theuser.name}
+	body
+		p Welcome to your profile
+		a(href='/vote') Vote
+		br
+		a(href='/playlist') Playlist

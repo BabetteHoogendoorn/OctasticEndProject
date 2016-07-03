@@ -1,0 +1,34 @@
+{
+  "name": "musicvote",
+  "version": "1.0.0",
+  "description": "The democratic song voting system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BabetteHoogendoorn/OctasticEndProject.git"
+  },
+  "keywords": [
+    "democratic",
+    "song",
+    "voting",
+    "music"
+  ],
+  "author": "Babette Hoogendoorn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BabetteHoogendoorn/OctasticEndProject/issues"
+  },
+  "homepage": "https://github.com/BabetteHoogendoorn/OctasticEndProject#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.13.0",
+    "fs": "0.0.2",
+    "path": "^0.12.7",
+    "pg": "^6.0.1"
+  }
+}
