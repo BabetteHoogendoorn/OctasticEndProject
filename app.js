@@ -27,6 +27,7 @@ var signup = require('./routes/signup');
 var login = require ('./routes/login');
 var profile = require('./routes/profile');
 var logout = require ('./routes/logout');
+var vote = require ('./routes/vote')
 
 
 // Get database configuration
@@ -44,9 +45,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // use routes
 app.use('/', routes);
 app.use('/signup', signup);
-// app.use('/login', login);
+app.use('/logout', logout);
 app.use('/profile', profile);
 app.use('/index', index);
+app.use('/vote', vote);
 
 // Static files
 app.use(express.static('./public'));
