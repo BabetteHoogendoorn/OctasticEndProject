@@ -53,7 +53,35 @@ db.user = db.conn.define('users', {
   }
 });
 
+//Models Spotify
+db.spot_user = db.conn.define('spotifyusers', {
+  spot_id: Sequelize.STRING,
+  spot_name: Sequelize.STRING
+})
+
+db.song = db.conn.define('song', {
+  song_name: Sequelize.STRING,
+  song_artist: Sequelize.STRING
+})
+
+db.event = db.conn.define('events', {
+  event_name: Sequelize.STRING,
+  end_time: Sequelize.STRING
+})
+
+db.vote = db.conn.define('votes', {
+  vote = Sequelize.INTEGER
+})
+
 //establish relationships
+db.user.hasMany(db.vote);
+db.vote.belongsTo(db.user);
+
+db.song.hasMany(db.vote);
+db.vote.belongsTo(db.song);
+
+db.vote.hasMany(db.event);
+db.event.belongsTo(db.vote);
 
 
 
